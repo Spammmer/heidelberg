@@ -19,6 +19,7 @@
 
 
 		global.addEventListener('resize', _resize, true);
+		global.addEventListener('orientationchange', _resize, true);
 		_resize();
 
 	}
