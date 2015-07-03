@@ -121,8 +121,7 @@ main section {
 
 main section article {
 	display: inline-block;
-	width: 28%;
-	max-width: 320px;
+	width: 320px;
 	height: 380px;
 	margin: 16px;
 	padding: 16px;
@@ -195,3 +194,39 @@ footer {
 	background-repeat: repeat repeat;
 }
 
+
+
+/*
+ * MEDIA QUERIES
+ */
+
+@media (max-width: 420px) {
+
+	header > div {
+		width: auto;
+		max-width: initial;
+	}
+
+	header p {
+		line-height: 2em;
+	}
+
+	main section article {
+		display: block;
+		margin: 16px 0px;
+		width: auto;
+	}
+
+}
+
+@media (max-width: 320px) {
+
+	header > div {
+		padding: 16px 0px;
+	}
+
+	header p {
+		text-align: justify;
+	}
+
+}
